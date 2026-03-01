@@ -3,7 +3,7 @@
 ## Project Information
 - **Project Type**: Greenfield
 - **Start Date**: 2026-03-01T00:00:00Z
-- **Current Stage**: CONSTRUCTION - Functional Design (Backend Service)
+- **Current Stage**: CONSTRUCTION - NFR Design (Backend Service)
 
 ## Workspace State
 - **Existing Code**: No
