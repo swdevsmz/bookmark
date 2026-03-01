@@ -26,7 +26,7 @@
 - [x] User Stories - SKIPPED (Simple MVP, clear requirements)
 - [x] Workflow Planning - COMPLETED (2026-03-01)
 - [x] Application Design - COMPLETED (2026-03-01, 4 artifacts generated)
-- [ ] Units Generation - PENDING
+- [x] Units Generation - COMPLETED (2026-03-01, 3 units defined with dependencies)
 
 ### CONSTRUCTION PHASE
 - [ ] Functional Design (per-unit) - PLANNED
