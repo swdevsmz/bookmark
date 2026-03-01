@@ -29,9 +29,12 @@
 - [ ] Units Generation - PENDING
 
 ### CONSTRUCTION PHASE
-- [ ] Per-Unit Design - PENDING
-- [ ] Code Generation - PENDING
-- [ ] Build and Test - PENDING
+- [ ] Functional Design (per-unit) - PLANNED
+- [ ] NFR Requirements (per-unit) - PLANNED
+- [ ] NFR Design (per-unit) - PLANNED
+- [ ] Infrastructure Design (per-unit) - PLANNED
+- [ ] Code Generation (per-unit) - PLANNED
+- [ ] Build and Test - PLANNED
 
 ### OPERATIONS PHASE
 - [ ] Operations - PLACEHOLDER
