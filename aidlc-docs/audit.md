@@ -221,3 +221,71 @@
 **Status**: Most content now in Japanese. Some technical descriptions of remaining English still being processed due to wiki-style formatting challenges.
 
 ---
+
+## Units Generation - Planning Phase Initiated
+**Timestamp**: 2026-03-01T03:30:00Z
+**User Input**: "新しいブランチをつくって、次にすすめて"
+**Translation**: "Create a new branch and move to the next step"
+**AI Action**:
+- Created feature/units-generation branch
+- Generated unit-of-work-plan.md with decomposition strategy:
+  - Proposed 3-unit architecture (Frontend / Backend / Auth)
+  - Included 5 decomposition questions with [Answer]: tags
+  - Outlined mandatory artifacts to generate
+**File Created**: aidlc-docs/inception/plans/unit-of-work-plan.md
+**Context**: INCEPTION - Units Generation (Part 1: Planning)
+
+---
+
+## Units Generation - Planning Phase Approval
+**Timestamp**: 2026-03-01T03:45:00Z
+**User Input**: "承認します。"
+**Translation**: "I approve."
+**Answers Collected**:
+- Q1 (Unit Decomposition): [a] 3-unit decomposition (Frontend / Backend / Auth)
+- Q2 (Team Structure): [a] Independent teams for each unit
+- Q3 (Code Organization): [a] Monorepo with packages/ directory
+- Q4 (Integration Method): [a] REST API only
+- Q5 (Deployment Strategy): [a] Independent deployment per unit
+
+**AI Analysis**: All answers are clear and unambiguous. No follow-up questions needed.
+
+**Context**: INCEPTION - Units Generation (Part 1: Planning - Approved)
+
+---
+
+## Units Generation - Generation Phase (Part 2)
+**Timestamp**: 2026-03-01T03:50:00Z
+**User Input**: User approval for Units Generation complete
+**AI Action**:
+- Generated aidlc-docs/inception/application-design/unit-of-work.md
+  - Detailed 3-unit definitions:
+    - Unit 1: Frontend Service (SPA with React)
+    - Unit 2: Backend Service (Lambda + API Gateway)
+    - Unit 3: Authentication Service (Cognito integration)
+  - Monorepo structure (packages/frontend, packages/backend, packages/auth)
+  - Cross-unit considerations (API contracts, shared concerns)
+  - Development order: Backend → Auth → Frontend
+
+- Generated aidlc-docs/inception/application-design/unit-of-work-dependency.md
+  - Dependency matrix showing inter-unit relationships
+  - 4 detailed flow diagrams (auth, CRUD, create, update with optimistic locking)
+  - REST API contracts for Backend Service and Auth Service
+  - Deployment ordering and initialization order
+  - Communication patterns and error handling
+
+- Generated aidlc-docs/inception/application-design/unit-of-work-story-map.md
+  - Mapped requirements to units (FR-1 through NFR-3)
+  - 14 features mapped with unit responsibility breakdown
+  - Priority and complexity assessment
+  - Unit work distribution estimate (~60h Frontend, ~30h Backend, ~28h Auth)
+
+**Files Created**:
+1. aidlc-docs/inception/application-design/unit-of-work.md
+2. aidlc-docs/inception/application-design/unit-of-work-dependency.md
+3. aidlc-docs/inception/application-design/unit-of-work-story-map.md
+
+**Status**: Units Generation COMPLETED
+**Context**: INCEPTION - Units Generation (Part 2: Generation - Complete)
+
+---
